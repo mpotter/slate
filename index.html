@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>Able's Product Development Process</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -86,12 +86,13 @@
   color: #90a959;
 }
     </style>
+    <link rel="stylesheet" media="screen" href="https://fonts.googleapis.com/css?family=Arimo:400,400italic,700,700italic">
     <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
     <link href="stylesheets/print.css" rel="stylesheet" media="print" />
       <script src="javascripts/all.js"></script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;Producer&quot;,&quot;PD&quot;,&quot;PE&quot;,&quot;Designer&quot;,&quot;Tech-Lead&quot;,&quot;QA-Manager&quot;,&quot;SE&quot;,&quot;QA-Tester&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -101,10 +102,14 @@
     <div class="tocify-wrapper">
       <img src="images/logo.png" />
         <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
-              <a href="#" data-language-name="python">python</a>
-              <a href="#" data-language-name="javascript">javascript</a>
+              <a href="#" data-language-name="Producer">Producer</a>
+              <a href="#" data-language-name="PD">PD</a>
+              <a href="#" data-language-name="PE">PE</a>
+              <a href="#" data-language-name="Designer">Designer</a>
+              <a href="#" data-language-name="Tech-Lead">Tech-Lead</a>
+              <a href="#" data-language-name="QA-Manager">QA-Manager</a>
+              <a href="#" data-language-name="SE">SE</a>
+              <a href="#" data-language-name="QA-Tester">QA-Tester</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -112,251 +117,1025 @@
         <ul class="search-results"></ul>
       <div id="toc">
       </div>
-        <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
-            <li><a href='https://github.com/tripit/slate'>Documentation Powered by Slate</a></li>
-        </ul>
     </div>
     <div class="page-wrapper">
       <div class="dark-box"></div>
       <div class="content">
         <h1 id="introduction">Introduction</h1>
 
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<pre class="highlight Producer">
+  <p>Hello Producer!</p>
 
-<p>We have language bindings in Shell, Ruby, and Python! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+  <p>Your focus is on communicating effectively with internal and external
+  stakeholders. You reduce the risk of our work connecting effectively to
+  the priorities of external Partners. You lower the cost of communication
+  for our builders within the organization by normalizing and providing
+  an easy conduit for requirements.</p>
+</pre>
 
-<p>This example API documentation page was created with <a href="https://github.com/tripit/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&rsquo;s documentation.</p>
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
 
-<h1 id="authentication">Authentication</h1>
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
 
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-</code></pre>
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
 
-<blockquote>
-<p>Make sure to replace <code class="prettyprint">meowmeowmeow</code> with your API key.</p>
-</blockquote>
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<p>This document is the source of truth for critical consistencies in our product
+development process.</p>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<h1 id="planning">Planning</h1>
 
-<p><code class="prettyprint">Authorization: meowmeowmeow</code></p>
+<pre class="highlight markdown Producer">
+  <p>During Planning, your principal focus will be on identifying and
+  communicating requirements. On Partner projects, this will primarily involve interviewing Partners to understand their needs.</p>
+
+  <p>You will communicate the requirements and constraints that you identify
+  from stakeholders to the Product Designer and Product Engineer in order for
+  them to consider appropriate solutions.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<p>The goal of Planning is to document all the requirements for a software
+release.</p>
+
+<h2 id="document-problems">Document problems</h2>
+
+<pre class="highlight Producer">
+  <p>Ensure that the problem statements reflect your understanding of the
+  feedback and input that's been provided by all stakeholders. Play the role
+  of the stakeholder when they're not in the room.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>A release must be focused on a discrete set of problems you&rsquo;re intending to address. Work hard to ensure the problem statements are phrased in such a way that they don&rsquo;t have too much overlap, useful in prioritizing features, and measurable.</p></li>
+<li><p>It&rsquo;s not always true that you will only be solving problems that the end-user of the product has. In some cases, the needs of a Partner, a sales organization, or other stakeholders should be considered in the problem set as well, if not as a principal concern.</p></li>
+</ul>
+
+<h2 id="document-kpis">Document KPIs</h2>
+
+<pre class="highlight Producer">
+  <p>You will be responsible for creating alignment around the effectiveness
+  by which the KPIs represent success for the project. Essentially, these
+  KPIs will form a scoreboard. So, whatever each of the stakeholders whose
+  interests you represent consider success should be captured here.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>We call the metrics you use to measure your success in addressing the
+problems &ldquo;Key Performance Indicators (KPIs).&rdquo; A problem might have one or more
+metrics.</p></li>
+<li><p>KPIs should settle debates on scope. One should be able to use the KPIs to
+argue in favor or against scope on the basis of its impact on the KPIs.</p></li>
+<li><p>Store all the problems and KPIs in a Google Doc titled &ldquo;README&rdquo; that&rsquo;s easily
+discovered by all future team members. Work hard to ensure that the document is
+useful to all future team members, particularly ones who may not have developed
+extensive domain knowledge in the product&rsquo;s market.</p></li>
+</ul>
+
+<h2 id="document-critical-assumptions">Document critical assumptions</h2>
+
+<pre class="highlight Producer">
+  <p>Make sure you understand how the assumptions relate to the problems that
+  the team is trying to solve. If this were your startup, and the stakeholders
+  are your potential investors, you should be able to construct a flawless
+  pitch for the features the team has come up with.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>Any product feature that is required to address a problem you&rsquo;ve identified
+is a <em>critical</em> assumption. Another way to think about what is a &ldquo;critical&rdquo;
+assumption vs. a &ldquo;table stakes&rdquo; feature is that critical assumptions are what
+makes the product uniquely valuable. Table stakes features, on the other hand,
+<em>need</em> to exist as to not detract from the effectiveness of the critical
+assumptions.</p></li>
+<li><p>We separate &ldquo;critical&rdquo; assumptions from &ldquo;table stakes&rdquo; features to help
+ensure the Planning team spends 80% of their time in Planning on the &ldquo;critical&rdquo;
+features. They should only spend 20% of their time making sure table stakes
+functionality is captured.</p></li>
+<li><p>Document <em>all</em> critical assumptions within the UX Prototype. Describe any
+ambiguity that can&rsquo;t be adequately documented in the UX Prototype in the
+README.</p></li>
+<li><p>You should identify metrics behind all of these features. The metrics you
+identify should be monitored because they relate or contribute to the KPIs.</p></li>
+<li><p>These assumptions should inherently put forward a hypothesis as to how the
+problems are going to be solved. The UX (and in some cases UI) of how they&rsquo;re
+implemented and tested is critical to the release’s success. You should take
+care to document what this hypothesis or hypotheses are in the release&rsquo;s README
+for your own benefit and for the benefit of future team members.</p></li>
+<li><p>You should have as few of these as necessary to solving the problems you’ve
+outlined. If there are assumptions that overlap, attempt to prioritize one of
+the assumptions and push the others to a future release.</p></li>
+<li><p>Solutions that compete or overlap should be prioritized in descending order
+of their assumed impact in addressing the problem(s) divided by their estimated
+complexity multiplied by their estimated cost: (impact) / (complexity * cost).</p></li>
+</ul>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+<li>&ldquo;Results from acceptance test runs should be posted to GitHub for successful
+integration with a software engineer&rsquo;s workflow&rdquo; (from Fino)</li>
+</ul>
+
+<h2 id="document-table-stakes-features">Document table stakes features</h2>
+
+<pre class="highlight Producer">
+  <p>Ensure that the features identified here encompass any concern for
+  functionality that the stakeholders have expressed. If you think a feature
+  listed here _is_ critical from the stakeholders perspective, be sure to
+  express that argument to the team to ensure they're considering the degree
+  of its importance properly.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>Any product feature whose implementation doesn&rsquo;t directly affect a problem
+you&rsquo;ve identified is a <em>table stakes</em> feature. Said differently, if the feature
+just needs &ldquo;to exist&rdquo; but, the details for how it&rsquo;s implemented (assuming
+general best practices are met) don&rsquo;t have an impact on how successfully the
+problems are addressed.</p></li>
+<li><p>Document <em>all</em> table stakes features within the UX Prototype. Describe any
+ambiguity that can&rsquo;t be adequately documented in the UX Prototype in the README.</p></li>
+<li><p>These assumptions have minimal impact on directly solving the problems but
+are important to either meet market expectations or otherwise avoid impacting
+the effectiveness of the critical assumptions. They need to exist but the UX/UI
+of how they’re implemented is not seen as a meaningful risk to testing the
+assumptions.</p></li>
+</ul>
+
+<h3 id="examples">Examples</h3>
+
+<ul>
+<li>&ldquo;A user needs to be able to recover their account if they forget their
+password&rdquo; (from Fino)</li>
+</ul>
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+  You should invest as least as possible in these assumptions. You should work
+  hard to reduce scope. The solutions should have a strong bias to using
+  pre-existing patterns.
 </aside>
 
-<h1 id="kittens">Kittens</h1>
+<h2 id="identify-user-paths">Identify user paths</h2>
 
-<h2 id="get-all-kittens">Get All Kittens</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<pre class="highlight Producer">
+  <p>Help make sure the team isn't missing anything. Provide a fresh set of
+  eyes.</p>
+</pre>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
-</code></pre>
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
 
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json"><code><span class="p">[</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="p">{</span><span class="w">
-    </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">]</span><span class="w">
-</span></code></pre>
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
 
-<p>This endpoint retrieves all kittens.</p>
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
 
-<h3 id="http-request">HTTP Request</h3>
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
 
-<p><code class="prettyprint">GET http://example.com/api/kittens</code></p>
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
 
-<h3 id="query-parameters">Query Parameters</h3>
+<ul>
+<li><p>A &ldquo;user path&rdquo; is a complete thought for something the user is able to
+accomplish in the product.</p></li>
+<li><p> How user paths are best broken up is somewhat subjective. We believe the
+most useful delineation considers the needed collaboration between all
+stakeholders. Our best governing thought to this end is to consider paths from
+the perspective of what a user is trying to accomplish with a feature or set of
+features. We think this is the easiest framing for everyone to understand.</p></li>
+<li><p>If you find that you&rsquo;ve created a path that, once implemented, is only
+partially useful for the end user to accomplish something, the path might be
+too small and/or should be combined with paths that unlock the entire
+functionality that the user would need to accomplish the intended outcome. If
+instead you can consider useful features within a path that are discretely
+valuable to the user, the path is perhaps too broad or long.</p></li>
+<li><p>Paths should be one sentence and phrased as actions the user takes to
+accomplish an objective. Please use sentence case for consistency.</p></li>
+<li><p>Once you&rsquo;ve settled on what all the paths are (or, have a good first draft),
+traverse the path from the perspective of the end-user from every possible
+entry point and precondition and take every possible action. Each precondition
+and entry point, combined with the branch formed by a sequence of actions form
+the &ldquo;scenarios&rdquo; within the path.</p></li>
+<li><p>Your goal in identifying scenarios is to articulate all the <em>boundary</em> cases
+for a path. Boundary cases are useful in specifying how the product should
+behave when one of its inputs is at or just beyond its maximum or minimum
+limits. By discovering and documenting all boundary cases within a feature, you
+will have simulated the stress a user will eventually bring the product,
+surfaced any needed clarification before software is written, and established
+the outline for all the subsequent acceptance tests to be written.</p></li>
+<li><p>To help generate scenarios and potentially boundary cases, consider the &ldquo;best
+practices&rdquo; list we provide and include e.g. error state considerations, etc.</p></li>
+</ul>
 
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>include_cats</td>
-<td>false</td>
-<td>If set to true, the result will also include cats.</td>
-</tr>
-<tr>
-<td>available</td>
-<td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
-</tr>
-</tbody></table>
+<h2 id="identify-prereqs">Identify prereqs</h2>
 
-<aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>Prereqs are units of work that are specifically called out as opportunities
+to operate with higher concurrency in Production.</p></li>
+<li><p>Ask &ldquo;what tasks can and should be done by one or few individuals first that,
+once completed, would mean the team could double in size and grow more
+productive?&rdquo;</p></li>
+<li><p>e.g. &ldquo;Setup staging environment,&rdquo; &ldquo;Set up CircleCI to run specs&rdquo;, &ldquo;Document
+use of React and Redux&rdquo;, etc.</p></li>
+<li><p>Consider the &ldquo;best practices&rdquo; list we provide and include e.g. developer
+operations tasks, establishing stack design patterns, etc.</p></li>
+</ul>
+
+<h2 id="identify-topics">Identify topics</h2>
+
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>A &ldquo;topic&rdquo; should be composed of work within an area of the application that
+should, for efficiency’s sake, be completed by a specific engineer and/or in a
+specific sequence, i.e. Jane is the best person to develop this feature because
+she has or will develop that other feature.</p></li>
+<li><p>Topics should be as small as possible to encourage higher concurrency and
+fewer dependencies. A topic is too big if a subset of its tasks can be
+completed efficiently by two different engineers with the same skill-set. A
+topic is too small if it excludes related functionality that, for efficiency&rsquo;s
+sake, is best completed by that same engineer.</p></li>
+</ul>
+
+<h2 id="create-issues">Create issues</h2>
+
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>These will serve as placeholder units for requirements to be documented
+within. For now, they&rsquo;re just high-level user flows with scenario titles and
+prereqs. We create them now so that they can be flushed out as the project
+progresses to contain all requirements for software development (Scenarios,
+UI Flow, Acceptance Tests, Planning Estimate, Subtasks, Implementation Notes).</p></li>
+<li><p>When creating them, use a label system to delineate which issues have all the
+requirements necessary to begin software development and which do not, e.g
+<code class="prettyprint">needs UI</code>, <code class="prettyprint">needs acceptance test</code>, <code class="prettyprint">needs planning estimate</code>.</p></li>
+</ul>
+
+<h2 id="add-planning-estimates">Add Planning Estimates</h2>
+
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>Create the estimate by considering the sum complexity of all the scenarios
+within the path.</p></li>
+<li><p>Use person-hours and consider the full-stack.</p></li>
+<li><p>For any estimate that is longer than 4 hours, break the path out into
+subtasks and ensure each isn&rsquo;t estimated to take longer than 4 person-hours.
+Total the estimate for each of the subtasks to generate the Planning Estimate
+for the entire path. Document all subtasks and any assumptions you have about
+the implementation within the GitHub issue under sections called &ldquo;Subtasks&rdquo; and
+&ldquo;Implementation Notes&rdquo; respectively.</p></li>
+</ul>
+
+<h2 id="create-contributor-tracks">Create Contributor Tracks</h2>
+
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>The end result will produce a staffing plan and timeline.</p></li>
+<li><p>Contributor tracks should dictate sequence in which work is completed and
+reflect intra and inter topic efficiencies.</p></li>
+<li><p>By definition, all prereqs should come first, globally.</p></li>
+<li><p>Make note of which paths need to be completed in Pre-production. A completed
+path requires an acceptance test and a UI flow for all scenarios. The goal is
+to maintain a greater than one week buffer between completed requirements for
+user paths (Scenarios, UI Flow, Acceptance Tests, Planning Estimate, Subtasks,
+Implementation Notes) and software development.</p></li>
+<li><p>Use GitHub Milestones and GitHub Projects to document the intra and inter
+topic Issue sequence.</p></li>
+</ul>
+
+<aside class="warning">
+  We&rsquo;re considering how a custom solution like Tracks could lower the cost of
+  reinforcing our expectations for generating contributor tracks, estimates,
+  and sequencing work.
 </aside>
 
-<h2 id="get-a-specific-kitten">Get a Specific Kitten</h2>
-<pre class="highlight ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h1 id="pre-production">Pre-production</h1>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre>
-<pre class="highlight shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre>
-<pre class="highlight javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
 
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json"><code><span class="p">{</span><span class="w">
-  </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="nt">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
 
-<p>This endpoint retrieves a specific kitten.</p>
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
 
-<aside class="warning">Inside HTML code blocks like this one, you can&rsquo;t use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
 
-<h3 id="http-request">HTTP Request</h3>
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
 
-<p><code class="prettyprint">GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
 
-<h3 id="url-parameters">URL Parameters</h3>
+<p>The goal of Pre-production is to complete tasks that will allow for higher
+quality software to be created with higher concurrency in Production.</p>
 
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to retrieve</td>
-</tr>
-</tbody></table>
+<h2 id="start-acceptance-tests">Start acceptance tests</h2>
 
-          <h1 id="errors">Errors</h1>
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
 
-<aside class="notice">This error section is stored in a separate file in `includes/_errors.md`. Slate allows you to optionally separate out your docs into many files&hellip;just save them to the `includes` folder and add them to the top of your `index.md`&rsquo;s frontmatter. Files are included in the order listed.</aside>
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
 
-<p>The Kittn API uses the following error codes:</p>
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
 
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request &ndash; Your request sucks</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized &ndash; Your API key is wrong</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden &ndash; The kitten requested is hidden for administrators only</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found &ndash; The specified kitten could not be found</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed &ndash; You tried to access a kitten with an invalid method</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable &ndash; You requested a format that isn&rsquo;t json</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone &ndash; The kitten requested has been removed from our servers</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&rsquo;m a teapot</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests &ndash; You&rsquo;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error &ndash; We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable &ndash; We&rsquo;re temporarially offline for maintanance. Please try again later.</td>
-</tr>
-</tbody></table>
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>Write Acceptance Tests in Fino.</p></li>
+<li><p>Each user path will be contained within the context of a single GitHub Issue.</p></li>
+<li><p>Tests should specify pre-requisite application condition and data for each
+scenario. Right now, this should be documented in the GitHub Issue and
+implemented manually using Planter. Eventually, Fino should be able to document
+it in a way that Planter can execute directly.</p></li>
+</ul>
+
+<aside class="warning">
+  Fino 1.0 requires you to write one test to cover all scenarios. Fino 2.0 will
+  allow you to create multiple tests for each issue. In either case, each
+  scenario within the path should have action/assertions testing that scenario.
+</aside>
+
+<h2 id="start-ui-flows">Start UI Flows</h2>
+
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li>Add UI Flows as a link in the GitHub Issue.</li>
+</ul>
+
+<aside class="warning">
+  A future version of Fino might make attaching UI Flows to scenarios much
+  cleaner.
+</aside>
+
+<h2 id="complete-prereqs">Complete prereqs</h2>
+
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li>Sometimes these will have a PR, sometimes they won&rsquo;t.</li>
+</ul>
+
+<h1 id="production">Production</h1>
+
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<p>The goal of Production is to create high-quality software reliably.</p>
+
+<h2 id="complete-ui-flows-amp-acceptance-tests">Complete UI Flows &amp; Acceptance Tests</h2>
+
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>Write Acceptance Tests in Fino.</p></li>
+<li><p>Acceptance tests should specify pre-requisite application condition and data
+for each scenario. Right now, this should be documented in the GitHub Issue and
+implemented manually using Planter. Eventually, Fino should be able to document
+it in a way that Planter can execute directly.</p></li>
+<li><p>Add UI Flows as a link in the GitHub Issue.</p></li>
+</ul>
+
+<aside class="warning">
+  A future version of Fino might make attaching UI Flows to scenarios much
+  cleaner.
+</aside>
+
+<h2 id="open-prs-to-satisfy-user-paths">Open PRs to satisfy user paths</h2>
+
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li><p>Code should meet AbleCop expectations.</p></li>
+<li><p>PRs eligible for QA should include both front-end and back-end.</p></li>
+<li><p>PRs should include Planter seed file.</p></li>
+<li><p>Communicate what you&rsquo;re working on.</p></li>
+<li><p>After you familiarize yourself with the work, add a Production Estimate to
+the Issue to let your team know when to expect your work to be completed and
+escalate risk. We may eventually use a custom solution like Tracks to escalate
+estimation risk and reinforce expectations for team communication.</p></li>
+<li><p>Write the code to address the user flow (GitHub Issue) on <em>one branch.</em>  If
+you are intending to collaborate across areas of the stack (i.e. front-end and
+back-end), coordinate or pair with the other engineer and use the same branch.</p></li>
+<li><p>PRs should target the <code class="prettyprint">stable</code> branch.</p></li>
+</ul>
+
+<aside class="warning">
+  A future version of Fino might understand prerequisite data in a way that is
+  executed automatically by Planter.
+</aside>
+
+<aside class="warning">
+  We&rsquo;re exploring how a tool like Tracks might help us identify estimation
+  risk and reinforce expectations for team communication.
+</aside>
+
+<h2 id="run-acceptance-tests">Run acceptance tests</h2>
+
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li>Use Fino.</li>
+</ul>
+
+<h2 id="merge-prs">Merge PRs</h2>
+
+<pre class="highlight Producer">
+  <p>Here's something the Producer should consider.</p>
+</pre>
+
+<pre class="highlight PD">
+  Here's something the PD should consider.
+</pre>
+
+<pre class="highlight PE">
+  Here's something the PE should consider.
+</pre>
+
+<pre class="highlight Designer">
+  Here's something the Designer should consider.
+</pre>
+
+<pre class="highlight Tech-Lead">
+  Here's something the Tech Lead should consider.
+</pre>
+
+<pre class="highlight QA-Manager">
+  Here's something the QA Manager should consider.
+</pre>
+
+<pre class="highlight SE">
+  Here's something the SE should consider.
+</pre>
+
+<pre class="highlight QA-Tester">
+  Here's something the QA Tester should consider.
+</pre>
+
+<ul>
+<li>Follow our best practices for code review.</li>
+</ul>
 
       </div>
       <div class="dark-box">
           <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
-                <a href="#" data-language-name="python">python</a>
-                <a href="#" data-language-name="javascript">javascript</a>
+                <a href="#" data-language-name="Producer">Producer</a>
+                <a href="#" data-language-name="PD">PD</a>
+                <a href="#" data-language-name="PE">PE</a>
+                <a href="#" data-language-name="Designer">Designer</a>
+                <a href="#" data-language-name="Tech-Lead">Tech-Lead</a>
+                <a href="#" data-language-name="QA-Manager">QA-Manager</a>
+                <a href="#" data-language-name="SE">SE</a>
+                <a href="#" data-language-name="QA-Tester">QA-Tester</a>
           </div>
       </div>
     </div>
