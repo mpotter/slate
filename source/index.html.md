@@ -101,8 +101,19 @@ development process.
   Here's something the QA Tester should consider.
 </pre>
 
-The goal of Planning is to document all the requirements for a software
-release.
+The goal of Planning is to translate assumptions about how a problem or set of
+problems can be solved by a product into requirements for software development.
+
+The process is successful when members of the Planning team spend less than 20%
+of their time on the project in Production.
+
+The risks to success in this process:
+
+- The Planning team isn't thorough enough in specifying requirements and they
+end up spending more than 20% of their time focused on this project in
+Production.
+- The Planning team spends more time specifying and conditioning requirements
+for a release than they would if they participated in Production.
 
 ## Document problems
 
@@ -143,6 +154,10 @@ release.
 -  A release must be focused on a discrete set of problems you're intending to address. Work hard to ensure the problem statements are phrased in such a way that they don't have too much overlap, useful in prioritizing features, and measurable.
 
 - It's not always true that you will only be solving problems that the end-user of the product has. In some cases, the needs of a Partner, a sales organization, or other stakeholders should be considered in the problem set as well, if not as a principal concern.
+
+### Examples
+
+TODO
 
 ## Document KPIs
 
@@ -192,6 +207,10 @@ argue in favor or against scope on the basis of its impact on the KPIs.
 discovered by all future team members. Work hard to ensure that the document is
 useful to all future team members, particularly ones who may not have developed
 extensive domain knowledge in the product's market.
+
+### Examples
+
+TODO
 
 ## Document critical assumptions
 
@@ -321,16 +340,14 @@ the effectiveness of the critical assumptions. They need to exist but the UX/UI
 of how they’re implemented is not seen as a meaningful risk to testing the
 assumptions.
 
+- You should invest as least as possible in these assumptions. You should work
+hard to reduce scope. The solutions should have a strong bias to using
+pre-existing patterns.
+
 ### Examples
 
 - "A user needs to be able to recover their account if they forget their
 password" (from Fino)
-
-<aside class="notice">
-  You should invest as least as possible in these assumptions. You should work
-  hard to reduce scope. The solutions should have a strong bias to using
-  pre-existing patterns.
-</aside>
 
 ## Identify user paths
 
@@ -403,6 +420,10 @@ the outline for all the subsequent acceptance tests to be written.
 - To help generate scenarios and potentially boundary cases, consider the "best
 practices" list we provide and include e.g. error state considerations, etc.
 
+### Examples
+
+TODO
+
 ## Identify prereqs
 
 <pre class="highlight Producer">
@@ -450,6 +471,10 @@ use of React and Redux", etc.
 - Consider the "best practices" list we provide and include e.g. developer
 operations tasks, establishing stack design patterns, etc.
 
+### Examples
+
+TODO
+
 ## Identify topics
 
 <pre class="highlight Producer">
@@ -495,6 +520,10 @@ completed efficiently by two different engineers with the same skill-set. A
 topic is too small if it excludes related functionality that, for efficiency's
 sake, is best completed by that same engineer.
 
+### Examples
+
+TODO
+
 ## Create issues
 
 <pre class="highlight Producer">
@@ -538,6 +567,10 @@ UI Flow, Acceptance Tests, Planning Estimate, Subtasks, Implementation Notes).
 - When creating them, use a label system to delineate which issues have all the
 requirements necessary to begin software development and which do not, e.g
 `needs UI`, `needs acceptance test`, `needs planning estimate`.
+
+### Examples
+
+TODO
 
 ## Add Planning Estimates
 
@@ -584,6 +617,10 @@ Total the estimate for each of the subtasks to generate the Planning Estimate
 for the entire path. Document all subtasks and any assumptions you have about
 the implementation within the GitHub issue under sections called "Subtasks" and
 "Implementation Notes" respectively.
+
+### Examples
+
+TODO
 
 ## Create Contributor Tracks
 
@@ -641,6 +678,10 @@ topic Issue sequence.
   and sequencing work.
 </aside>
 
+### Examples
+
+TODO
+
 
 # Pre-production
 
@@ -678,6 +719,18 @@ topic Issue sequence.
 
 The goal of Pre-production is to complete tasks that will allow for higher
 quality software to be created with higher concurrency in Production.
+
+The process is successful when more team members are introduced in Production
+in a manner that doesn't compromise efficiency or software quality.
+
+The risks to success in this process:
+
+- The Pre-production team doesn't just focus on Prereqs and spends more time
+than they need to before starting production.
+- Production is staffed too early and team members end up blocked by missing
+Prereqs.
+- Code patterns are missing causing the code base to grow inconsistent and
+more costly to develop and maintain.
 
 ## Start acceptance tests
 
@@ -722,6 +775,10 @@ scenario. Right now, this should be documented in the GitHub Issue and
 implemented manually using Planter. Eventually, Fino should be able to document
 it in a way that Planter can execute directly.
 
+### Examples
+
+TODO
+
 <aside class="warning">
   Fino 1.0 requires you to write one test to cover all scenarios. Fino 2.0 will
   allow you to create multiple tests for each issue. In either case, each
@@ -764,6 +821,10 @@ it in a way that Planter can execute directly.
 
 - Add UI Flows as a link in the GitHub Issue.
 
+### Examples
+
+TODO
+
 <aside class="warning">
   A future version of Fino might make attaching UI Flows to scenarios much
   cleaner.
@@ -805,6 +866,10 @@ it in a way that Planter can execute directly.
 
 - Sometimes these will have a PR, sometimes they won't.
 
+### Examples
+
+TODO
+
 
 # Production
 
@@ -841,6 +906,14 @@ it in a way that Planter can execute directly.
 </pre>
 
 The goal of Production is to create high-quality software reliably.
+
+The process is successful when we deliver quality code on time.
+
+The risks to success in this process:
+
+- Misunderstood requirements
+- Software development outpaces design and/or QA
+- Bad estimates
 
 ## Complete UI Flows & Acceptance Tests
 
@@ -884,6 +957,10 @@ implemented manually using Planter. Eventually, Fino should be able to document
 it in a way that Planter can execute directly.
 
 - Add UI Flows as a link in the GitHub Issue.
+
+### Examples
+
+TODO
 
 <aside class="warning">
   A future version of Fino might make attaching UI Flows to scenarios much
@@ -943,6 +1020,10 @@ back-end), coordinate or pair with the other engineer and use the same branch.
 
 - PRs should target the `stable` branch.
 
+### Examples
+
+TODO
+
 <aside class="warning">
   A future version of Fino might understand prerequisite data in a way that is
   executed automatically by Planter.
@@ -989,6 +1070,10 @@ back-end), coordinate or pair with the other engineer and use the same branch.
 
 - Use Fino.
 
+### Examples
+
+TODO
+
 ## Merge PRs
 
 <pre class="highlight Producer">
@@ -1024,3 +1109,7 @@ back-end), coordinate or pair with the other engineer and use the same branch.
 </pre>
 
 - Follow our best practices for code review.
+
+### Examples
+
+TODO
