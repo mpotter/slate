@@ -203,8 +203,21 @@ development process.</p>
   Here's something the QA Tester should consider.
 </pre>
 
-<p>The goal of Planning is to document all the requirements for a software
-release.</p>
+<p>The goal of Planning is to translate assumptions about how a problem or set of
+problems can be solved by a product into requirements for software development.</p>
+
+<p>The process is successful when members of the Planning team spend less than 20%
+of their time on the project in Production.</p>
+
+<p>The risks to success in this process:</p>
+
+<ul>
+<li>The Planning team isn&rsquo;t thorough enough in specifying requirements and they
+end up spending more than 20% of their time focused on this project in
+Production.</li>
+<li>The Planning team spends more time specifying and conditioning requirements
+for a release than they would if they participated in Production.</li>
+</ul>
 
 <h2 id="document-problems">Document problems</h2>
 
@@ -246,6 +259,10 @@ release.</p>
 <li><p>A release must be focused on a discrete set of problems you&rsquo;re intending to address. Work hard to ensure the problem statements are phrased in such a way that they don&rsquo;t have too much overlap, useful in prioritizing features, and measurable.</p></li>
 <li><p>It&rsquo;s not always true that you will only be solving problems that the end-user of the product has. In some cases, the needs of a Partner, a sales organization, or other stakeholders should be considered in the problem set as well, if not as a principal concern.</p></li>
 </ul>
+
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
 
 <h2 id="document-kpis">Document KPIs</h2>
 
@@ -295,6 +312,10 @@ discovered by all future team members. Work hard to ensure that the document is
 useful to all future team members, particularly ones who may not have developed
 extensive domain knowledge in the product&rsquo;s market.</p></li>
 </ul>
+
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
 
 <h2 id="document-critical-assumptions">Document critical assumptions</h2>
 
@@ -420,6 +441,9 @@ are important to either meet market expectations or otherwise avoid impacting
 the effectiveness of the critical assumptions. They need to exist but the UX/UI
 of how they’re implemented is not seen as a meaningful risk to testing the
 assumptions.</p></li>
+<li><p>You should invest as least as possible in these assumptions. You should work
+hard to reduce scope. The solutions should have a strong bias to using
+pre-existing patterns.</p></li>
 </ul>
 
 <h3 id="examples">Examples</h3>
@@ -428,12 +452,6 @@ assumptions.</p></li>
 <li>&ldquo;A user needs to be able to recover their account if they forget their
 password&rdquo; (from Fino)</li>
 </ul>
-
-<aside class="notice">
-  You should invest as least as possible in these assumptions. You should work
-  hard to reduce scope. The solutions should have a strong bias to using
-  pre-existing patterns.
-</aside>
 
 <h2 id="identify-user-paths">Identify user paths</h2>
 
@@ -502,6 +520,10 @@ the outline for all the subsequent acceptance tests to be written.</p></li>
 practices&rdquo; list we provide and include e.g. error state considerations, etc.</p></li>
 </ul>
 
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
+
 <h2 id="identify-prereqs">Identify prereqs</h2>
 
 <pre class="highlight Producer">
@@ -547,6 +569,10 @@ use of React and Redux&rdquo;, etc.</p></li>
 <li><p>Consider the &ldquo;best practices&rdquo; list we provide and include e.g. developer
 operations tasks, establishing stack design patterns, etc.</p></li>
 </ul>
+
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
 
 <h2 id="identify-topics">Identify topics</h2>
 
@@ -594,6 +620,10 @@ topic is too small if it excludes related functionality that, for efficiency&rsq
 sake, is best completed by that same engineer.</p></li>
 </ul>
 
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
+
 <h2 id="create-issues">Create issues</h2>
 
 <pre class="highlight Producer">
@@ -638,6 +668,10 @@ UI Flow, Acceptance Tests, Planning Estimate, Subtasks, Implementation Notes).</
 requirements necessary to begin software development and which do not, e.g
 <code class="prettyprint">needs UI</code>, <code class="prettyprint">needs acceptance test</code>, <code class="prettyprint">needs planning estimate</code>.</p></li>
 </ul>
+
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
 
 <h2 id="add-planning-estimates">Add Planning Estimates</h2>
 
@@ -684,6 +718,10 @@ for the entire path. Document all subtasks and any assumptions you have about
 the implementation within the GitHub issue under sections called &ldquo;Subtasks&rdquo; and
 &ldquo;Implementation Notes&rdquo; respectively.</p></li>
 </ul>
+
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
 
 <h2 id="create-contributor-tracks">Create Contributor Tracks</h2>
 
@@ -739,6 +777,10 @@ topic Issue sequence.</p></li>
   and sequencing work.
 </aside>
 
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
+
 <h1 id="pre-production">Pre-production</h1>
 
 <pre class="highlight Producer">
@@ -775,6 +817,20 @@ topic Issue sequence.</p></li>
 
 <p>The goal of Pre-production is to complete tasks that will allow for higher
 quality software to be created with higher concurrency in Production.</p>
+
+<p>The process is successful when more team members are introduced in Production
+in a manner that doesn&rsquo;t compromise efficiency or software quality.</p>
+
+<p>The risks to success in this process:</p>
+
+<ul>
+<li>The Pre-production team doesn&rsquo;t just focus on Prereqs and spends more time
+than they need to before starting production.</li>
+<li>Production is staffed too early and team members end up blocked by missing
+Prereqs.</li>
+<li>Code patterns are missing causing the code base to grow inconsistent and
+more costly to develop and maintain.</li>
+</ul>
 
 <h2 id="start-acceptance-tests">Start acceptance tests</h2>
 
@@ -818,6 +874,10 @@ scenario. Right now, this should be documented in the GitHub Issue and
 implemented manually using Planter. Eventually, Fino should be able to document
 it in a way that Planter can execute directly.</p></li>
 </ul>
+
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
 
 <aside class="warning">
   Fino 1.0 requires you to write one test to cover all scenarios. Fino 2.0 will
@@ -863,6 +923,10 @@ it in a way that Planter can execute directly.</p></li>
 <li>Add UI Flows as a link in the GitHub Issue.</li>
 </ul>
 
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
+
 <aside class="warning">
   A future version of Fino might make attaching UI Flows to scenarios much
   cleaner.
@@ -906,6 +970,10 @@ it in a way that Planter can execute directly.</p></li>
 <li>Sometimes these will have a PR, sometimes they won&rsquo;t.</li>
 </ul>
 
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
+
 <h1 id="production">Production</h1>
 
 <pre class="highlight Producer">
@@ -941,6 +1009,16 @@ it in a way that Planter can execute directly.</p></li>
 </pre>
 
 <p>The goal of Production is to create high-quality software reliably.</p>
+
+<p>The process is successful when we deliver quality code on time.</p>
+
+<p>The risks to success in this process:</p>
+
+<ul>
+<li>Misunderstood requirements</li>
+<li>Software development outpaces design and/or QA</li>
+<li>Bad estimates</li>
+</ul>
 
 <h2 id="complete-ui-flows-amp-acceptance-tests">Complete UI Flows &amp; Acceptance Tests</h2>
 
@@ -984,6 +1062,10 @@ implemented manually using Planter. Eventually, Fino should be able to document
 it in a way that Planter can execute directly.</p></li>
 <li><p>Add UI Flows as a link in the GitHub Issue.</p></li>
 </ul>
+
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
 
 <aside class="warning">
   A future version of Fino might make attaching UI Flows to scenarios much
@@ -1039,6 +1121,10 @@ back-end), coordinate or pair with the other engineer and use the same branch.</
 <li><p>PRs should target the <code class="prettyprint">stable</code> branch.</p></li>
 </ul>
 
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
+
 <aside class="warning">
   A future version of Fino might understand prerequisite data in a way that is
   executed automatically by Planter.
@@ -1087,6 +1173,10 @@ back-end), coordinate or pair with the other engineer and use the same branch.</
 <li>Use Fino.</li>
 </ul>
 
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
+
 <h2 id="merge-prs">Merge PRs</h2>
 
 <pre class="highlight Producer">
@@ -1124,6 +1214,10 @@ back-end), coordinate or pair with the other engineer and use the same branch.</
 <ul>
 <li>Follow our best practices for code review.</li>
 </ul>
+
+<h3 id="examples">Examples</h3>
+
+<p>TODO</p>
 
       </div>
       <div class="dark-box">
