@@ -240,17 +240,22 @@ None
   Here's something the QA Tester should consider.
 </pre>
 
-- We call the metrics you use to measure your success in addressing the
-problems "Key Performance Indicators (KPIs)." A problem might have one or more
-metrics.
+In Planning, you will form _assumptions_ about how the problems you've
+identified are best solved. We ask you to document how you will measure your
+success in solving the problems by explicitly identifying any of the
+quantitative or qualitative metrics you'll use. We call these metrics "Key
+Performance Indicators" (KPIs).
 
-- KPIs should settle debates on scope. One should be able to use the KPIs to
-argue in favor or against scope on the basis of its impact on the KPIs.
+Each problem you're solving must have one or more KPIs.
 
-- Store all the problems and KPIs in a Google Doc titled "README" that's easily
-discovered by all future team members. Work hard to ensure that the document is
-useful to all future team members, particularly ones who may not have developed
-extensive domain knowledge in the product's market.
+The best KPIs should help settle debates on scope. One should be able to use
+the KPIs to argue in favor or against scope on the basis of its impact on the
+KPIs.
+
+The best KPIs are subjective and easily understood without the need for
+extensive domain knowledge. If you do have a KPI that doesn't relate to a
+problem in an obvious way, take care to explain the relationship to an audience
+that may not have extensive knowledge of the product's market.
 
 ### Examples
 
