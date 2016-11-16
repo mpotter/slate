@@ -805,12 +805,6 @@ Implementation Notes) and software development.
 - Use GitHub Milestones and GitHub Projects to document the intra and inter
 topic Issue sequence.
 
-<aside class="warning">
-  We're considering how a custom solution like Tracks could lower the cost of
-  reinforcing our expectations for generating contributor tracks, estimates,
-  and sequencing work.
-</aside>
-
 ### Examples
 
 TODO
@@ -827,7 +821,12 @@ TODO
 
 ### Areas of Investment
 
-None
+<aside class="warning">
+  We're considering how a custom solution like Tracks could lower the cost of
+  reinforcing our expectations for generating contributor tracks, estimates,
+  and sequencing work.
+</aside>
+
 
 # Pre-production
 
