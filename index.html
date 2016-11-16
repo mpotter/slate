@@ -752,7 +752,9 @@ sake, is best completed by that same engineer.</p>
 
 <h3 id="examples">Examples</h3>
 
-<p>TODO</p>
+<ul>
+<li><a href="https://github.com/ableco/fino/issues?q=is%3Aissue+label%3Atopic+is%3Aclosed">Fino v1.0 topics</a></li>
+</ul>
 
 <h3 id="required-deliverables">Required Deliverables</h3>
 
@@ -801,16 +803,20 @@ sake, is best completed by that same engineer.</p>
   Here's something the QA Tester should consider.
 </pre>
 
-<ul>
-<li><p>These will serve as placeholder units for requirements to be documented
-within. For now, they&rsquo;re just high-level user flows with scenario titles and
-prereqs. We create them now so that they can be flushed out as the project
-progresses to contain all requirements for software development (Scenarios,
-UI Flow, Acceptance Tests, Planning Estimate, Subtasks, Implementation Notes).</p></li>
-<li><p>When creating them, use a label system to delineate which issues have all the
+<p>Create GitHub issues for all topics, user paths, and prereqs. With each topic,
+list all of its user paths and/or prereqs. With each user path, list all of the
+path&rsquo;s scenarios.</p>
+
+<p>Initially, these Issues will serve as placeholder units for requirements to be
+documented within. For now, they&rsquo;re just high-level user flows with scenario
+titles and prereqs. We create them now so that they can be flushed out as the
+project progresses to contain all requirements for software development
+(Scenarios, UI Flow, Acceptance Tests, Planning Estimate, Subtasks,
+Implementation Notes).</p>
+
+<p>When creating them, use a label system to delineate which issues have all the
 requirements necessary to begin software development and which do not, e.g
-<code class="prettyprint">needs UI</code>, <code class="prettyprint">needs acceptance test</code>, <code class="prettyprint">needs planning estimate</code>.</p></li>
-</ul>
+<code class="prettyprint">needs UI</code>, <code class="prettyprint">needs acceptance test</code>, <code class="prettyprint">needs planning estimate</code>.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -860,17 +866,20 @@ requirements necessary to begin software development and which do not, e.g
   Here's something the QA Tester should consider.
 </pre>
 
-<ul>
-<li><p>Create the estimate by considering the sum complexity of all the scenarios
-within the path.</p></li>
-<li><p>Use person-hours and consider the full-stack.</p></li>
-<li><p>For any estimate that is longer than 4 hours, break the path out into
+<p>We add a Planning Estimate to all of our work as a necessary prerequisite to
+determining our staffing, schedule, and budget.</p>
+
+<p>Make the estimate by considering the sum complexity of all the scenarios
+within the path.</p>
+
+<p>Use person-hours and consider the full-stack.</p>
+
+<p>For any estimate that is longer than 4 hours, break the path out into
 subtasks and ensure each isn&rsquo;t estimated to take longer than 4 person-hours.
 Total the estimate for each of the subtasks to generate the Planning Estimate
 for the entire path. Document all subtasks and any assumptions you have about
 the implementation within the GitHub issue under sections called &ldquo;Subtasks&rdquo; and
-&ldquo;Implementation Notes&rdquo; respectively.</p></li>
-</ul>
+&ldquo;Implementation Notes&rdquo; respectively.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -920,19 +929,23 @@ the implementation within the GitHub issue under sections called &ldquo;Subtasks
   Here's something the QA Tester should consider.
 </pre>
 
-<ul>
-<li><p>The end result will produce a staffing plan and timeline.</p></li>
-<li><p>Contributor tracks should dictate sequence in which work is completed and
-reflect intra and inter topic efficiencies.</p></li>
-<li><p>By definition, all prereqs should come first, globally.</p></li>
-<li><p>Make note of which paths need to be completed in Pre-production. A completed
-path requires an acceptance test and a UI flow for all scenarios. The goal is
+<p>We use contributor tracks to determine the optimal sequence to address work,
+reflecting intra and inter topic efficiencies.</p>
+
+<p>By definition, all prereqs should come first, globally.</p>
+
+<p>Use GitHub Milestones and GitHub Projects to document the intra and inter topic
+Issue sequence.</p>
+
+<p>Make note of which paths need to be completed in Pre-production. A completed
+path requires an Acceptance Test and a UI Flow for all scenarios. The goal is
 to maintain a greater than one week buffer between completed requirements for
 user paths (Scenarios, UI Flow, Acceptance Tests, Planning Estimate, Subtasks,
-Implementation Notes) and software development.</p></li>
-<li><p>Use GitHub Milestones and GitHub Projects to document the intra and inter
-topic Issue sequence.</p></li>
-</ul>
+Implementation Notes) and software development. Whichever software development
+comes first should have these requirements prioritized in Pre-production.</p>
+
+<p>When you&rsquo;re finished, update the Planning Dashboard (Forecast) to communicate
+your staffing plan and timeline.</p>
 
 <h3 id="examples">Examples</h3>
 
