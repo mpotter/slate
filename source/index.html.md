@@ -167,24 +167,22 @@ achieving the goal while addressing those risks.
 
 We believe a product release should organize around a clear understanding of
 what problems it's trying to address. Write down what problems you're solving
-and, if helpful, which ones you're acknowleding but choosing not to solve. This
-will make future debate and discussion of scope and functionality much more
-efficient because criticism can occur on the merit of features on their ability
+and, if helpful, which ones you're acknowledging but choosing _not_ to solve.
+This will make future debate and discussion of scope and functionality much
+more efficient because criticism can occur on the merit of a feature's ability
 to solve a particular problem, not their general merit (which is much harder
-and much more subject to opinion).
+and subjective).
 
-You should work hard to ensure the problem statements are phrased in as clear
-and useful way as possible. Remember, these problems should be easily
-understood not just by the Planning team, but every contributor to the product,
-including potential future contributors. It's usually easier to understand
-problems that are organized _discreetly_ and without too much overlap. Now is
-also a good time to define any domain-specific language that you're running
-into since it'll be fresh in your mind.
+Problem statements should be easily understood not just by the Planning team,
+but every contributor to the product, including potential future contributors.
+It's usually easier to understand problems that are organized _discreetly_ and
+without too much dependency knowledge or overlap. Now is also a good time to
+define any domain-specific language that you're running into since it'll be
+fresh in your mind.
 
 Recall that the primary purpose of your problem statements is for them to be
-useful in prioritizing functionality so, if you have important functionality in
-mind, work back to understand why you think it's important and problem its
-solving.
+useful in prioritizing and iterating on functionality so, if you have important functionality in mind, work back to understand why you think it's important and
+what problem it's solving.
 
 Lastly, it's not always true that you will _only_ be solving problems that the
 end-user of the product has. In some cases, the needs of a Partner, a sales
