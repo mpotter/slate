@@ -1005,7 +1005,7 @@ TODO
   Here's something the QA Tester should consider.
 </pre>
 
-Design UI Flows for all user paths.
+Design UI Flows for all user paths that are prioritized for Pre-production.
 
 For any scenario within a user path that has a dramatic effect on the UI Flow,
 design a UI Flow specifically for it.
@@ -1063,7 +1063,7 @@ TODO
   Here's something the QA Tester should consider.
 </pre>
 
-- Sometimes these will have a PR, sometimes they won't.
+Sometimes these will have a PR, sometimes they won't.
 
 ### Examples
 
@@ -1158,14 +1158,14 @@ The risks to success in this process:
   Here's something the QA Tester should consider.
 </pre>
 
-- Write Acceptance Tests in Fino.
+Write Acceptance Tests for all user path scenarios in Fino. Tests should
+specify pre-requisite application condition and data for each scenario.
+Document this information in the GitHub Issue to be implemented manually using
+Planter.
 
-- Acceptance tests should specify pre-requisite application condition and data
-for each scenario. Right now, this should be documented in the GitHub Issue and
-implemented manually using Planter. Eventually, Fino should be able to document
-it in a way that Planter can execute directly.
-
-- Add UI Flows as a link in the GitHub Issue.
+Design UI Flows for all user paths. For any scenario within a user path that
+has a dramatic effect on the UI Flow, design a UI Flow specifically for it. Add
+UI Flows as links in the GitHub Issue.
 
 ### Examples
 
@@ -1182,6 +1182,11 @@ TODO
 <aside class="warning">
   A future version of Fino might make attaching UI Flows to scenarios much
   cleaner.
+</aside>
+
+<aside class="warning">
+  We might explore a way for Fino to natively document prerequisite data in a
+  way that Planter can execute directly.
 </aside>
 
 ## Open PRs to satisfy user paths
@@ -1218,24 +1223,25 @@ TODO
   Here's something the QA Tester should consider.
 </pre>
 
-- Code should meet AbleCop expectations.
-
-- PRs eligible for QA should include both front-end and back-end.
-
-- PRs should include Planter seed file.
-
-- Communicate what you're working on.
-
-- After you familiarize yourself with the work, add a Production Estimate to
+After you familiarize yourself with the user path, add a Production Estimate to
 the Issue to let your team know when to expect your work to be completed and
 escalate risk. We may eventually use a custom solution like Tracks to escalate
 estimation risk and reinforce expectations for team communication.
 
-- Write the code to address the user flow (GitHub Issue) on *one branch.*  If
-you are intending to collaborate across areas of the stack (i.e. front-end and
-back-end), coordinate or pair with the other engineer and use the same branch.
+Write the code to address the user path (communicated in the GitHub Issue) on
+*one branch.*  If you are intending to collaborate across areas of the stack
+(i.e. front-end and back-end), coordinate or pair with the other engineer and
+use the same branch.
 
-- PRs should target the `stable` branch.
+PRs should target the `stable` branch.
+
+Code should meet AbleCop expectations.
+
+PRs eligible for QA should include both front-end and back-end.
+
+PRs should include Planter seed file.
+
+You should communicate what you're working on.
 
 ### Examples
 
@@ -1293,7 +1299,7 @@ TODO
   Here's something the QA Tester should consider.
 </pre>
 
-- Use Fino.
+Use Fino to run the acceptance tests for the user path addressed by the PR.
 
 ### Examples
 
