@@ -642,7 +642,7 @@ sake, is best completed by that same engineer.
 
 ### Examples
 
-TODO
+- [Fino v1.0 topics](https://github.com/ableco/fino/issues?q=is%3Aissue+label%3Atopic+is%3Aclosed)
 
 ### Required Deliverables
 
@@ -691,13 +691,18 @@ TODO
   Here's something the QA Tester should consider.
 </pre>
 
-- These will serve as placeholder units for requirements to be documented
-within. For now, they're just high-level user flows with scenario titles and
-prereqs. We create them now so that they can be flushed out as the project
-progresses to contain all requirements for software development (Scenarios,
-UI Flow, Acceptance Tests, Planning Estimate, Subtasks, Implementation Notes).
+Create GitHub issues for all topics, user paths, and prereqs. With each topic,
+list all of its user paths and/or prereqs. With each user path, list all of the
+path's scenarios.
 
-- When creating them, use a label system to delineate which issues have all the
+Initially, these Issues will serve as placeholder units for requirements to be
+documented within. For now, they're just high-level user flows with scenario
+titles and prereqs. We create them now so that they can be flushed out as the
+project progresses to contain all requirements for software development
+(Scenarios, UI Flow, Acceptance Tests, Planning Estimate, Subtasks,
+Implementation Notes).
+
+When creating them, use a label system to delineate which issues have all the
 requirements necessary to begin software development and which do not, e.g
 `needs UI`, `needs acceptance test`, `needs planning estimate`.
 
@@ -749,12 +754,15 @@ None
   Here's something the QA Tester should consider.
 </pre>
 
-- Create the estimate by considering the sum complexity of all the scenarios
+We add a Planning Estimate to all of our work as a necessary prerequisite to
+determining our staffing, schedule, and budget.
+
+Make the estimate by considering the sum complexity of all the scenarios
 within the path.
 
-- Use person-hours and consider the full-stack.
+Use person-hours and consider the full-stack.
 
-- For any estimate that is longer than 4 hours, break the path out into
+For any estimate that is longer than 4 hours, break the path out into
 subtasks and ensure each isn't estimated to take longer than 4 person-hours.
 Total the estimate for each of the subtasks to generate the Planning Estimate
 for the entire path. Document all subtasks and any assumptions you have about
@@ -809,21 +817,23 @@ None
   Here's something the QA Tester should consider.
 </pre>
 
-- The end result will produce a staffing plan and timeline.
+We use contributor tracks to determine the optimal sequence to address work,
+reflecting intra and inter topic efficiencies.
 
-- Contributor tracks should dictate sequence in which work is completed and
-reflect intra and inter topic efficiencies.
+By definition, all prereqs should come first, globally.
 
-- By definition, all prereqs should come first, globally.
+Use GitHub Milestones and GitHub Projects to document the intra and inter topic
+Issue sequence.
 
-- Make note of which paths need to be completed in Pre-production. A completed
-path requires an acceptance test and a UI flow for all scenarios. The goal is
+Make note of which paths need to be completed in Pre-production. A completed
+path requires an Acceptance Test and a UI Flow for all scenarios. The goal is
 to maintain a greater than one week buffer between completed requirements for
 user paths (Scenarios, UI Flow, Acceptance Tests, Planning Estimate, Subtasks,
-Implementation Notes) and software development.
+Implementation Notes) and software development. Whichever software development
+comes first should have these requirements prioritized in Pre-production.
 
-- Use GitHub Milestones and GitHub Projects to document the intra and inter
-topic Issue sequence.
+When you're finished, update the Planning Dashboard (Forecast) to communicate
+your staffing plan and timeline.
 
 ### Examples
 
