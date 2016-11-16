@@ -179,6 +179,10 @@ TODO
   Add problem statements to README
 </aside>
 
+### Areas of Investment
+
+None
+
 ## Document KPIs
 
 <pre class="highlight Producer">
@@ -237,6 +241,10 @@ TODO
 <aside class="success">
   Add KPIs to README
 </aside>
+
+### Areas of Investment
+
+None
 
 ## Document critical assumptions
 
@@ -323,6 +331,10 @@ integration with a software engineer's workflow" (from Fino)
   List your critical assumptions in the README and their metrics for success
 </aside>
 
+### Areas of Investment
+
+None
+
 ## Document table stakes features
 
 <pre class="highlight Producer">
@@ -385,6 +397,10 @@ pre-existing patterns.
 <aside class="success">
   Add table stakes features to Prototype
 </aside>
+
+### Areas of Investment
+
+None
 
 ### Examples
 
@@ -472,6 +488,10 @@ TODO
   List all user path titles and corresponding scenario titles in the README
 </aside>
 
+### Areas of Investment
+
+None
+
 ## Identify prereqs
 
 <pre class="highlight Producer">
@@ -529,6 +549,10 @@ TODO
   List all prereqs in the README
 </aside>
 
+### Areas of Investment
+
+None
+
 ## Identify topics
 
 <pre class="highlight Producer">
@@ -584,6 +608,10 @@ TODO
   Organize all prereqs and user paths into topics in the README
 </aside>
 
+### Areas of Investment
+
+None
+
 ## Create issues
 
 <pre class="highlight Producer">
@@ -637,6 +665,10 @@ TODO
 <aside class="success">
   Create GitHub issues for all user paths and prereqs
 </aside>
+
+### Areas of Investment
+
+None
 
 ## Add Planning Estimates
 
@@ -693,6 +725,10 @@ TODO
 <aside class="success">
   Add a Planning Estimate to all GitHub issues
 </aside>
+
+### Areas of Investment
+
+None
 
 ## Create Contributor Tracks
 
@@ -764,6 +800,9 @@ TODO
   Update Planning Dashboard (Forecast) with staffing estimates
 </aside>
 
+### Areas of Investment
+
+None
 
 # Pre-production
 
@@ -867,6 +906,8 @@ TODO
   Completed Acceptance Tests for at least 1-week of software development
 </aside>
 
+### Areas of Investment
+
 <aside class="warning">
   Fino 1.0 requires you to write one test to cover all scenarios. Fino 2.0 will
   allow you to create multiple tests for each issue. In either case, each
@@ -919,6 +960,8 @@ TODO
   Completed UI Flows for at least 1-week of software development
 </aside>
 
+### Areas of Investment
+
 <aside class="warning">
   A future version of Fino might make attaching UI Flows to scenarios much
   cleaner.
@@ -969,6 +1012,10 @@ TODO
 <aside class="success">
   Complete and close all prereq issues on GitHub
 </aside>
+
+### Areas of Investment
+
+None
 
 
 # Production
@@ -1068,6 +1115,8 @@ TODO
   Design and attach all UI Flows to all user paths
 </aside>
 
+### Areas of Investment
+
 <aside class="warning">
   A future version of Fino might make attaching UI Flows to scenarios much
   cleaner.
@@ -1136,6 +1185,8 @@ TODO
   Open PR with code to satisfy a user path
 </aside>
 
+### Areas of Investment
+
 <aside class="warning">
   A future version of Fino might understand prerequisite data in a way that is
   executed automatically by Planter.
@@ -1192,6 +1243,10 @@ TODO
   Pass or fail the Fino build
 </aside>
 
+### Areas of Investment
+
+None
+
 ## Merge PRs
 
 <pre class="highlight Producer">
@@ -1235,5 +1290,9 @@ TODO
 ### Required Deliverables
 
 <aside class="success">
-  Merge PR that satisifies requirements
+  Merge PR that satisfies requirements
 </aside>
+
+### Areas of Investment
+
+None
