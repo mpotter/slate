@@ -440,7 +440,7 @@ password" (from Fino)
 
 ### Areas of Investment
 
-<aside class="warning">
+<aside class="info">
   We think we can build a component library with common templates and patterns
   that could make the design and development of table stakes features faster.
 </aside>
@@ -652,7 +652,7 @@ sake, is best completed by that same engineer.
 
 ### Areas of Investment
 
-<aside class="warning">
+<aside class="info">
   Tracks could help us better understand how topic dependencies affect the
   overall schedule and level of concurrency in Production.
 </aside>
@@ -851,7 +851,7 @@ TODO
 
 ### Areas of Investment
 
-<aside class="warning">
+<aside class="info">
   We're considering how a custom solution like Tracks could lower the cost of
   reinforcing our expectations for generating contributor tracks, estimates,
   and sequencing work.
@@ -960,13 +960,13 @@ TODO
 
 ### Areas of Investment
 
-<aside class="warning">
+<aside class="info">
   Fino 1.0 requires you to write one test to cover all scenarios. Fino 2.0 will
   allow you to create multiple tests for each issue. In either case, each
   scenario within the path should have action/assertions testing that scenario.
 </aside>
 
-<aside class="warning">
+<aside class="info">
   We might explore a way for Fino to natively document prerequisite data in a
   way that Planter can execute directly.
 </aside>
@@ -1024,7 +1024,7 @@ TODO
 
 ### Areas of Investment
 
-<aside class="warning">
+<aside class="info">
   A future version of Fino might make attaching UI Flows to scenarios much
   cleaner.
 </aside>
@@ -1179,12 +1179,12 @@ TODO
 
 ### Areas of Investment
 
-<aside class="warning">
+<aside class="info">
   A future version of Fino might make attaching UI Flows to scenarios much
   cleaner.
 </aside>
 
-<aside class="warning">
+<aside class="info">
   We might explore a way for Fino to natively document prerequisite data in a
   way that Planter can execute directly.
 </aside>
@@ -1255,12 +1255,12 @@ TODO
 
 ### Areas of Investment
 
-<aside class="warning">
+<aside class="info">
   A future version of Fino might understand prerequisite data in a way that is
   executed automatically by Planter.
 </aside>
 
-<aside class="warning">
+<aside class="info">
   We're exploring how a tool like Tracks might help us identify estimation
   risk and reinforce expectations for team communication.
 </aside>
