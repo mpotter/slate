@@ -1118,7 +1118,7 @@ manually using Planter.</p>
   Here's something the QA Tester should consider.
 </pre>
 
-<p>Design UI Flows for all user paths.</p>
+<p>Design UI Flows for all user paths that are prioritized for Pre-production.</p>
 
 <p>For any scenario within a user path that has a dramatic effect on the UI Flow,
 design a UI Flow specifically for it.</p>
@@ -1176,9 +1176,7 @@ design a UI Flow specifically for it.</p>
   Here's something the QA Tester should consider.
 </pre>
 
-<ul>
-<li>Sometimes these will have a PR, sometimes they won&rsquo;t.</li>
-</ul>
+<p>Sometimes these will have a PR, sometimes they won&rsquo;t.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -1274,14 +1272,14 @@ design a UI Flow specifically for it.</p>
   Here's something the QA Tester should consider.
 </pre>
 
-<ul>
-<li><p>Write Acceptance Tests in Fino.</p></li>
-<li><p>Acceptance tests should specify pre-requisite application condition and data
-for each scenario. Right now, this should be documented in the GitHub Issue and
-implemented manually using Planter. Eventually, Fino should be able to document
-it in a way that Planter can execute directly.</p></li>
-<li><p>Add UI Flows as a link in the GitHub Issue.</p></li>
-</ul>
+<p>Write Acceptance Tests for all user path scenarios in Fino. Tests should
+specify pre-requisite application condition and data for each scenario.
+Document this information in the GitHub Issue to be implemented manually using
+Planter.</p>
+
+<p>Design UI Flows for all user paths. For any scenario within a user path that
+has a dramatic effect on the UI Flow, design a UI Flow specifically for it. Add
+UI Flows as links in the GitHub Issue.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -1298,6 +1296,11 @@ it in a way that Planter can execute directly.</p></li>
 <aside class="warning">
   A future version of Fino might make attaching UI Flows to scenarios much
   cleaner.
+</aside>
+
+<aside class="warning">
+  We might explore a way for Fino to natively document prerequisite data in a
+  way that Planter can execute directly.
 </aside>
 
 <h2 id="open-prs-to-satisfy-user-paths">Open PRs to satisfy user paths</h2>
@@ -1334,20 +1337,25 @@ it in a way that Planter can execute directly.</p></li>
   Here's something the QA Tester should consider.
 </pre>
 
-<ul>
-<li><p>Code should meet AbleCop expectations.</p></li>
-<li><p>PRs eligible for QA should include both front-end and back-end.</p></li>
-<li><p>PRs should include Planter seed file.</p></li>
-<li><p>Communicate what you&rsquo;re working on.</p></li>
-<li><p>After you familiarize yourself with the work, add a Production Estimate to
+<p>After you familiarize yourself with the user path, add a Production Estimate to
 the Issue to let your team know when to expect your work to be completed and
 escalate risk. We may eventually use a custom solution like Tracks to escalate
-estimation risk and reinforce expectations for team communication.</p></li>
-<li><p>Write the code to address the user flow (GitHub Issue) on <em>one branch.</em>  If
-you are intending to collaborate across areas of the stack (i.e. front-end and
-back-end), coordinate or pair with the other engineer and use the same branch.</p></li>
-<li><p>PRs should target the <code class="prettyprint">stable</code> branch.</p></li>
-</ul>
+estimation risk and reinforce expectations for team communication.</p>
+
+<p>Write the code to address the user path (communicated in the GitHub Issue) on
+<em>one branch.</em>  If you are intending to collaborate across areas of the stack
+(i.e. front-end and back-end), coordinate or pair with the other engineer and
+use the same branch.</p>
+
+<p>PRs should target the <code class="prettyprint">stable</code> branch.</p>
+
+<p>Code should meet AbleCop expectations.</p>
+
+<p>PRs eligible for QA should include both front-end and back-end.</p>
+
+<p>PRs should include Planter seed file.</p>
+
+<p>You should communicate what you&rsquo;re working on.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -1405,9 +1413,7 @@ back-end), coordinate or pair with the other engineer and use the same branch.</
   Here's something the QA Tester should consider.
 </pre>
 
-<ul>
-<li>Use Fino.</li>
-</ul>
+<p>Use Fino to run the acceptance tests for the user path addressed by the PR.</p>
 
 <h3 id="examples">Examples</h3>
 
