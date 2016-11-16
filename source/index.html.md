@@ -427,6 +427,11 @@ You should invest as least as possible in these assumptions. You should work
 hard to reduce scope. The solutions should have a strong bias to using
 pre-existing patterns.
 
+### Examples
+
+- "A user needs to be able to recover their account if they forget their
+password" (from Fino)
+
 ### Required Deliverables
 
 <aside class="success">
@@ -439,11 +444,6 @@ pre-existing patterns.
   We think we can build a component library with common templates and patterns
   that could make the design and development of table stakes features faster.
 </aside>
-
-### Examples
-
-- "A user needs to be able to recover their account if they forget their
-password" (from Fino)
 
 ## Identify user paths
 
