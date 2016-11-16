@@ -435,7 +435,10 @@ pre-existing patterns.
 
 ### Areas of Investment
 
-None
+<aside class="warning">
+  We think we can build a component library with common templates and patterns
+  that could make the design and development of table stakes features faster.
+</aside>
 
 ### Examples
 
