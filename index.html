@@ -740,17 +740,15 @@ would mean the team could double in size and grow more productive?&rdquo;</p>
   Here's something the QA Tester should consider.
 </pre>
 
-<ul>
-<li><p>A &ldquo;topic&rdquo; should be composed of work within an area of the application that
-should, for efficiency’s sake, be completed by a specific engineer and/or in a
-specific sequence, i.e. Jane is the best person to develop this feature because
-she has or will develop that other feature.</p></li>
-<li><p>Topics should be as small as possible to encourage higher concurrency and
+<p>A &ldquo;topic&rdquo; is a collection of user paths and prereqs within a common area of the application that should, for efficiency&rsquo;s sake, be completed by a specific
+engineer and/or in a specific sequence, e.g. Jane is the best person to develop
+this feature because she has or will develop that other feature.</p>
+
+<p>Topics should be as small as possible to encourage higher concurrency and
 fewer dependencies. A topic is too big if a subset of its tasks can be
 completed efficiently by two different engineers with the same skill-set. A
 topic is too small if it excludes related functionality that, for efficiency&rsquo;s
-sake, is best completed by that same engineer.</p></li>
-</ul>
+sake, is best completed by that same engineer.</p>
 
 <h3 id="examples">Examples</h3>
 
@@ -764,7 +762,10 @@ sake, is best completed by that same engineer.</p></li>
 
 <h3 id="areas-of-investment">Areas of Investment</h3>
 
-<p>None</p>
+<aside class="warning">
+  Tracks could help us better understand how topic dependencies affect the
+  overall schedule and level of concurrency in Production.
+</aside>
 
 <h2 id="create-issues">Create issues</h2>
 
