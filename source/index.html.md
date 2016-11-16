@@ -121,7 +121,7 @@ The risks to success in this process:
 
 - The Planning team isn't thorough enough in specifying requirements and they
 end up spending more than 20% of their time focused on this project in
-Production.
+Production clarifying requirements.
 - The Planning team spends more time specifying and conditioning requirements
 for a release than they would if they just designed and coded everything
 themselves.
@@ -172,6 +172,12 @@ achieving the goal while addressing those risks.
 ### Examples
 
 TODO
+
+### Required Deliverables
+
+<aside class="success">
+  Add problem statements to README
+</aside>
 
 ## Document KPIs
 
@@ -225,6 +231,12 @@ extensive domain knowledge in the product's market.
 ### Examples
 
 TODO
+
+### Required Deliverables
+
+<aside class="success">
+  Add KPIs to README
+</aside>
 
 ## Document critical assumptions
 
@@ -301,6 +313,16 @@ complexity multiplied by their estimated cost: (impact) / (complexity * cost).
 - "Results from acceptance test runs should be posted to GitHub for successful
 integration with a software engineer's workflow" (from Fino)
 
+### Required Deliverables
+
+<aside class="success">
+  Articulate your critical assumptions by adding functionality to Prototype
+</aside>
+
+<aside class="success">
+  List your critical assumptions in the README and their metrics for success
+</aside>
+
 ## Document table stakes features
 
 <pre class="highlight Producer">
@@ -357,6 +379,12 @@ assumptions.
 - You should invest as least as possible in these assumptions. You should work
 hard to reduce scope. The solutions should have a strong bias to using
 pre-existing patterns.
+
+### Required Deliverables
+
+<aside class="success">
+  Add table stakes features to Prototype
+</aside>
 
 ### Examples
 
@@ -438,6 +466,12 @@ practices" list we provide and include e.g. error state considerations, etc.
 
 TODO
 
+### Required Deliverables
+
+<aside class="success">
+  List all user path titles and corresponding scenario titles in the README
+</aside>
+
 ## Identify prereqs
 
 <pre class="highlight Producer">
@@ -489,6 +523,12 @@ operations tasks, establishing stack design patterns, etc.
 
 TODO
 
+### Required Deliverables
+
+<aside class="success">
+  List all prereqs in the README
+</aside>
+
 ## Identify topics
 
 <pre class="highlight Producer">
@@ -538,6 +578,12 @@ sake, is best completed by that same engineer.
 
 TODO
 
+### Required Deliverables
+
+<aside class="success">
+  Organize all prereqs and user paths into topics in the README
+</aside>
+
 ## Create issues
 
 <pre class="highlight Producer">
@@ -585,6 +631,12 @@ requirements necessary to begin software development and which do not, e.g
 ### Examples
 
 TODO
+
+### Required Deliverables
+
+<aside class="success">
+  Create GitHub issues for all user paths and prereqs
+</aside>
 
 ## Add Planning Estimates
 
@@ -635,6 +687,12 @@ the implementation within the GitHub issue under sections called "Subtasks" and
 ### Examples
 
 TODO
+
+### Required Deliverables
+
+<aside class="success">
+  Add a Planning Estimate to all GitHub issues
+</aside>
 
 ## Create Contributor Tracks
 
@@ -695,6 +753,16 @@ topic Issue sequence.
 ### Examples
 
 TODO
+
+### Required Deliverables
+
+<aside class="success">
+  Organize all GitHub Issues into Milestones
+</aside>
+
+<aside class="success">
+  Update Planning Dashboard (Forecast) with staffing estimates
+</aside>
 
 
 # Pre-production
@@ -793,6 +861,12 @@ it in a way that Planter can execute directly.
 
 TODO
 
+### Required Deliverables
+
+<aside class="success">
+  Completed Acceptance Tests for at least 1-week of software development
+</aside>
+
 <aside class="warning">
   Fino 1.0 requires you to write one test to cover all scenarios. Fino 2.0 will
   allow you to create multiple tests for each issue. In either case, each
@@ -839,6 +913,12 @@ TODO
 
 TODO
 
+### Required Deliverables
+
+<aside class="success">
+  Completed UI Flows for at least 1-week of software development
+</aside>
+
 <aside class="warning">
   A future version of Fino might make attaching UI Flows to scenarios much
   cleaner.
@@ -883,6 +963,12 @@ TODO
 ### Examples
 
 TODO
+
+### Required Deliverables
+
+<aside class="success">
+  Complete and close all prereq issues on GitHub
+</aside>
 
 
 # Production
@@ -976,6 +1062,12 @@ it in a way that Planter can execute directly.
 
 TODO
 
+### Required Deliverables
+
+<aside class="success">
+  Design and attach all UI Flows to all user paths
+</aside>
+
 <aside class="warning">
   A future version of Fino might make attaching UI Flows to scenarios much
   cleaner.
@@ -1038,6 +1130,12 @@ back-end), coordinate or pair with the other engineer and use the same branch.
 
 TODO
 
+### Required Deliverables
+
+<aside class="success">
+  Open PR with code to satisfy a user path
+</aside>
+
 <aside class="warning">
   A future version of Fino might understand prerequisite data in a way that is
   executed automatically by Planter.
@@ -1088,6 +1186,12 @@ TODO
 
 TODO
 
+### Required Deliverables
+
+<aside class="success">
+  Pass or fail the Fino build
+</aside>
+
 ## Merge PRs
 
 <pre class="highlight Producer">
@@ -1127,3 +1231,9 @@ TODO
 ### Examples
 
 TODO
+
+### Required Deliverables
+
+<aside class="success">
+  Merge PR that satisifies requirements
+</aside>
