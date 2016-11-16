@@ -408,22 +408,22 @@ None
   Here's something the QA Tester should consider.
 </pre>
 
-- Any product feature whose implementation doesn't directly affect a problem
+Any product feature whose implementation doesn't directly affect a problem
 you've identified is a *table stakes* feature. Said differently, if the feature
 just needs "to exist" but, the details for how it's implemented (assuming
 general best practices are met) don't have an impact on how successfully the
 problems are addressed.
 
-- Document _all_ table stakes features within the UX Prototype. Describe any
-ambiguity that can't be adequately documented in the UX Prototype in the README.
-
-- These assumptions have minimal impact on directly solving the problems but
+These assumptions have minimal impact on directly solving the problems but
 are important to either meet market expectations or otherwise avoid impacting
 the effectiveness of the critical assumptions. They need to exist but the UX/UI
 of how they’re implemented is not seen as a meaningful risk to testing the
 assumptions.
 
-- You should invest as least as possible in these assumptions. You should work
+Document _all_ of the table stakes features within the Prototype. Describe any
+ambiguity that can't be adequately documented in the Prototype in the README.
+
+You should invest as least as possible in these assumptions. You should work
 hard to reduce scope. The solutions should have a strong bias to using
 pre-existing patterns.
 
