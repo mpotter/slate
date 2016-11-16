@@ -1349,7 +1349,7 @@ None
   Here's something the QA Tester should consider.
 </pre>
 
-- Follow our best practices for code review.
+Follow our [best practices for code review](#).
 
 ### Examples
 
