@@ -271,7 +271,7 @@ TODO
 
 None
 
-## Document critical assumptions
+## Prototype critical assumptions
 
 <pre class="highlight Producer">
   <p>Make sure you understand how the assumptions relate to the problems that
@@ -308,38 +308,48 @@ None
   Here's something the QA Tester should consider.
 </pre>
 
-- Any product feature that is required to address a problem you've identified
-is a *critical* assumption. Another way to think about what is a "critical"
-assumption vs. a "table stakes" feature is that critical assumptions are what
-makes the product uniquely valuable. Table stakes features, on the other hand,
-_need_ to exist as to not detract from the effectiveness of the critical
-assumptions.
+Here the team turns their attention from the problems the product is trying to
+solve to the potential solution they'll build.
 
-- We separate "critical" assumptions from "table stakes" features to help
-ensure the Planning team spends 80% of their time in Planning on the "critical"
-features. They should only spend 20% of their time making sure table stakes
-functionality is captured.
+We consider any product feature that is required to address a problem you've
+identified a *critical assumption*. Every other feature is called a "table
+stakes feature." Another way to think about the difference between the two is
+that critical assumptions are what makes the product uniquely valuable. Table
+stakes features, on the other hand, _need_ to exist as to not detract from the effectiveness of the critical assumptions. In almost every case, you expect to
+see a table stakes feature in many other products in many different domains.
 
-- Document _all_ critical assumptions within the UX Prototype. Describe any
-ambiguity that can't be adequately documented in the UX Prototype in the
-README.
+We separate critical assumptions from table stakes features to help ensure the
+Planning team spends 80% of their time in Planning on the "critical" features.
+They should only spend 20% of their time making sure table stakes functionality
+is captured.
 
-- You should identify metrics behind all of these features. The metrics you
-identify should be monitored because they relate or contribute to the KPIs.
+We believe the best way to express these critical assumptions is by designing
+features within a Prototype. We _only_ fall back to other mediums when there's
+ambiguity that can't be adequately documented in Prototype form. This is rare
+but when it happens it should be documented or otherwise clearly referenced in
+the README.
 
-- These assumptions should inherently put forward a hypothesis as to how the
-problems are going to be solved. The UX (and in some cases UI) of how they're
-implemented and tested is critical to the release’s success. You should take
-care to document what this hypothesis or hypotheses are in the release's README
-for your own benefit and for the benefit of future team members.
+These assumptions will inherently put forward a hypothesis as to how they are
+going to solve the problems you previously documented. If you find yourself
+prototyping functionality at this point that doesn't have a substantial impact
+on one or more of those problems, either you're missing a problem or you're
+designing a table stakes feature and you should file it away for later so that
+you remained focused on what's critical for the product's success.
 
-- You should have as few of these as necessary to solving the problems you’ve
-outlined. If there are assumptions that overlap, attempt to prioritize one of
-the assumptions and push the others to a future release.
+Another check you can perform to ensure what you're working on is a critical
+assumption is to identify it's relationship to the KPIs. If a feature doesn't
+relate to a KPI, you're most likely working on something that's less than
+critical.
 
-- Solutions that compete or overlap should be prioritized in descending order
-of their assumed impact in addressing the problem(s) divided by their estimated
-complexity multiplied by their estimated cost: (impact) / (complexity * cost).
+For benefit of your current and future team members working on this project as
+well as the implementation of analytics, identify the metrics behind each of
+these features and their relationship to the KPIs.
+
+Lastly, try to have as few critical assumptions as necessary to solve the
+problems you’ve outlined. If there are features that overlap in solving a
+problem or problems, attempt to prioritize one of the features and push the
+others to a future release. This will reduce the cost and speed at which you'll
+be able to test your assumptions.
 
 ### Examples
 
@@ -360,7 +370,7 @@ integration with a software engineer's workflow" (from Fino)
 
 None
 
-## Document table stakes features
+## Prototype table stakes features
 
 <pre class="highlight Producer">
   <p>Ensure that the features identified here encompass any concern for
