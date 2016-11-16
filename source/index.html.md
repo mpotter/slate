@@ -61,6 +61,16 @@ search: true
 This document is the source of truth for critical consistencies in our product
 development process.
 
+The goal of this document is to establish ownership and accountability for
+every individual involved in building our products by clarifying their
+responsibilities and establishing expectations _between_ roles. By focusing on
+what's expected of you from other members of your project team at various
+stages of our process, our goal is to get out of the way of you doing your best
+work while putting you in a position to support your peers to do the same.
+
+Products are not built by individuals; Products are built by teams. Here is
+how our team works together.
+
 
 # Planning
 
