@@ -621,8 +621,8 @@ will have simulated the stress a user will eventually bring the product,
 surfaced any needed clarification before software is written, and established
 an actionable the outline for all the subsequent acceptance tests to be written.</p>
 
-<p>[To help generate scenarios and potentially boundary cases, consider the &ldquo;best
-practices&rdquo; list we provide and include e.g. error state considerations, etc.]</p>
+<p><em>[To help generate scenarios and potentially boundary cases, consider the &ldquo;best
+practices&rdquo; list we provide and include e.g. error state considerations, etc.]</em></p>
 
 <h3 id="examples">Examples</h3>
 
@@ -672,21 +672,26 @@ practices&rdquo; list we provide and include e.g. error state considerations, et
   Here's something the QA Tester should consider.
 </pre>
 
-<ul>
-<li><p>Prereqs are units of work that are specifically called out as opportunities
-to operate with higher concurrency in Production.</p></li>
-<li><p>Ask &ldquo;what tasks can and should be done by one or few individuals first that,
-once completed, would mean the team could double in size and grow more
-productive?&rdquo;</p></li>
-<li><p>e.g. &ldquo;Setup staging environment,&rdquo; &ldquo;Set up CircleCI to run specs&rdquo;, &ldquo;Document
-use of React and Redux&rdquo;, etc.</p></li>
-<li><p>Consider the &ldquo;best practices&rdquo; list we provide and include e.g. developer
-operations tasks, establishing stack design patterns, etc.</p></li>
-</ul>
+<p>Prereqs are units of work that are specifically called out as opportunities to
+operate with higher concurrency in Production. We take care to identify prereqs
+to avoid blockers in Production.</p>
+
+<p>Generally, a prereq is work that &ldquo;just needs to get done&rdquo; that is usually best
+completed by one person in a particular domain and is the dependency for other
+work. Many prereqs concern developer operations and establishing technology
+stack design patterns.</p>
+
+<p>To identify prereqs, use our <a href="#">list of common prereqs</a> and ask &ldquo;what tasks
+can and should be done by one or few individuals first that, once completed,
+would mean the team could double in size and grow more productive?&rdquo;</p>
 
 <h3 id="examples">Examples</h3>
 
-<p>TODO</p>
+<ul>
+<li>&ldquo;Setup staging environment&rdquo;</li>
+<li>&ldquo;Set up CircleCI to run specs&rdquo;</li>
+<li>&ldquo;Document use of React and Redux&rdquo;</li>
+</ul>
 
 <h3 id="required-deliverables">Required Deliverables</h3>
 
