@@ -630,12 +630,11 @@ None
   Here's something the QA Tester should consider.
 </pre>
 
-- A "topic" should be composed of work within an area of the application that
-should, for efficiency’s sake, be completed by a specific engineer and/or in a
-specific sequence, i.e. Jane is the best person to develop this feature because
-she has or will develop that other feature.
+A "topic" is a collection of user paths and prereqs within a common area of the application that should, for efficiency's sake, be completed by a specific
+engineer and/or in a specific sequence, e.g. Jane is the best person to develop
+this feature because she has or will develop that other feature.
 
-- Topics should be as small as possible to encourage higher concurrency and
+Topics should be as small as possible to encourage higher concurrency and
 fewer dependencies. A topic is too big if a subset of its tasks can be
 completed efficiently by two different engineers with the same skill-set. A
 topic is too small if it excludes related functionality that, for efficiency's
@@ -653,7 +652,10 @@ TODO
 
 ### Areas of Investment
 
-None
+<aside class="warning">
+  Tracks could help us better understand how topic dependencies affect the
+  overall schedule and level of concurrency in Production.
+</aside>
 
 ## Create issues
 
