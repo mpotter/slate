@@ -123,7 +123,11 @@ The risks to success in this process:
 end up spending more than 20% of their time focused on this project in
 Production.
 - The Planning team spends more time specifying and conditioning requirements
-for a release than they would if they participated in Production.
+for a release than they would if they just designed and coded everything
+themselves.
+
+This section attempts to provide the Planning team with a framework for
+achieving the goal while addressing those risks.
 
 ## Document problems
 
