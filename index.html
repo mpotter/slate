@@ -585,37 +585,44 @@ password&rdquo; (from Fino)</li>
   Here's something the QA Tester should consider.
 </pre>
 
-<ul>
-<li><p>A &ldquo;user path&rdquo; is a complete thought for something the user is able to
-accomplish in the product.</p></li>
-<li><p> How user paths are best broken up is somewhat subjective. We believe the
-most useful delineation considers the needed collaboration between all
-stakeholders. Our best governing thought to this end is to consider paths from
-the perspective of what a user is trying to accomplish with a feature or set of
-features. We think this is the easiest framing for everyone to understand.</p></li>
-<li><p>If you find that you&rsquo;ve created a path that, once implemented, is only
-partially useful for the end user to accomplish something, the path might be
-too small and/or should be combined with paths that unlock the entire
-functionality that the user would need to accomplish the intended outcome. If
-instead you can consider useful features within a path that are discretely
-valuable to the user, the path is perhaps too broad or long.</p></li>
-<li><p>Paths should be one sentence and phrased as actions the user takes to
-accomplish an objective. Please use sentence case for consistency.</p></li>
-<li><p>Once you&rsquo;ve settled on what all the paths are (or, have a good first draft),
-traverse the path from the perspective of the end-user from every possible
-entry point and precondition and take every possible action. Each precondition
-and entry point, combined with the branch formed by a sequence of actions form
-the &ldquo;scenarios&rdquo; within the path.</p></li>
-<li><p>Your goal in identifying scenarios is to articulate all the <em>boundary</em> cases
+<p>A &ldquo;user path&rdquo; is a complete thought for something the user is able to
+accomplish in the product. The goal of creating user paths is to break a
+large software project into sensible units of work and thereby, reduce risk.</p>
+
+<p>How user paths are best broken up is somewhat subjective. We believe the most
+useful delineation considers the needed collaboration between all stakeholders.
+Our best governing thought to this end is to consider paths from the
+perspective of what a user is trying to accomplish with a feature or set of
+features. We think this is the easiest framing for everyone to understand.</p>
+
+<p>User paths should be one sentence and phrased as actions the user takes to
+accomplish an objective. Please use sentence case for consistency and be
+mindful of your spelling and grammar.</p>
+
+<p>After a first pass on creating your paths, read them through a few times in
+relationship to the prototype. Take care to explore the product interface by
+interface and look for gaps. If you find that you&rsquo;ve created a path that, once implemented, is only partially useful for the end user to accomplish something,
+the path might be too small and/or should be combined with paths that unlock
+the entire functionality that the user would need to accomplish the intended
+outcome. If instead you can consider useful features within a path that are
+discretely valuable to the user, the path is perhaps too broad or long.</p>
+
+<p>Once you&rsquo;ve settled on what all the paths are, traverse each path from the
+perspective of the end-user from every possible entry point and precondition
+and take every possible action. Each precondition and entry point, combined
+with the branch formed by a sequence of actions form the &ldquo;scenarios&rdquo; within the
+path.</p>
+
+<p>Your goal in identifying scenarios is to articulate all the <em>boundary</em> cases
 for a path. Boundary cases are useful in specifying how the product should
 behave when one of its inputs is at or just beyond its maximum or minimum
 limits. By discovering and documenting all boundary cases within a feature, you
 will have simulated the stress a user will eventually bring the product,
 surfaced any needed clarification before software is written, and established
-the outline for all the subsequent acceptance tests to be written.</p></li>
-<li><p>To help generate scenarios and potentially boundary cases, consider the &ldquo;best
-practices&rdquo; list we provide and include e.g. error state considerations, etc.</p></li>
-</ul>
+an actionable the outline for all the subsequent acceptance tests to be written.</p>
+
+<p>[To help generate scenarios and potentially boundary cases, consider the &ldquo;best
+practices&rdquo; list we provide and include e.g. error state considerations, etc.]</p>
 
 <h3 id="examples">Examples</h3>
 
