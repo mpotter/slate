@@ -477,41 +477,44 @@ password" (from Fino)
   Here's something the QA Tester should consider.
 </pre>
 
-- A "user path" is a complete thought for something the user is able to
-accomplish in the product.
+A "user path" is a complete thought for something the user is able to
+accomplish in the product. The goal of creating user paths is to break a
+large software project into sensible units of work and thereby, reduce risk.
 
--  How user paths are best broken up is somewhat subjective. We believe the
-most useful delineation considers the needed collaboration between all
-stakeholders. Our best governing thought to this end is to consider paths from
-the perspective of what a user is trying to accomplish with a feature or set of
+How user paths are best broken up is somewhat subjective. We believe the most
+useful delineation considers the needed collaboration between all stakeholders.
+Our best governing thought to this end is to consider paths from the
+perspective of what a user is trying to accomplish with a feature or set of
 features. We think this is the easiest framing for everyone to understand.
 
-- If you find that you've created a path that, once implemented, is only
-partially useful for the end user to accomplish something, the path might be
-too small and/or should be combined with paths that unlock the entire
-functionality that the user would need to accomplish the intended outcome. If
-instead you can consider useful features within a path that are discretely
-valuable to the user, the path is perhaps too broad or long.
+User paths should be one sentence and phrased as actions the user takes to
+accomplish an objective. Please use sentence case for consistency and be
+mindful of your spelling and grammar.
 
-- Paths should be one sentence and phrased as actions the user takes to
-accomplish an objective. Please use sentence case for consistency.
+After a first pass on creating your paths, read them through a few times in
+relationship to the prototype. Take care to explore the product interface by
+interface and look for gaps. If you find that you've created a path that, once implemented, is only partially useful for the end user to accomplish something,
+the path might be too small and/or should be combined with paths that unlock
+the entire functionality that the user would need to accomplish the intended
+outcome. If instead you can consider useful features within a path that are
+discretely valuable to the user, the path is perhaps too broad or long.
 
-- Once you've settled on what all the paths are (or, have a good first draft),
-traverse the path from the perspective of the end-user from every possible
-entry point and precondition and take every possible action. Each precondition
-and entry point, combined with the branch formed by a sequence of actions form
-the "scenarios" within the path.
+Once you've settled on what all the paths are, traverse each path from the
+perspective of the end-user from every possible entry point and precondition
+and take every possible action. Each precondition and entry point, combined
+with the branch formed by a sequence of actions form the "scenarios" within the
+path.
 
-- Your goal in identifying scenarios is to articulate all the _boundary_ cases
+Your goal in identifying scenarios is to articulate all the _boundary_ cases
 for a path. Boundary cases are useful in specifying how the product should
 behave when one of its inputs is at or just beyond its maximum or minimum
 limits. By discovering and documenting all boundary cases within a feature, you
 will have simulated the stress a user will eventually bring the product,
 surfaced any needed clarification before software is written, and established
-the outline for all the subsequent acceptance tests to be written.
+an actionable the outline for all the subsequent acceptance tests to be written.
 
-- To help generate scenarios and potentially boundary cases, consider the "best
-practices" list we provide and include e.g. error state considerations, etc.
+[To help generate scenarios and potentially boundary cases, consider the "best
+practices" list we provide and include e.g. error state considerations, etc.]
 
 ### Examples
 
