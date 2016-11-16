@@ -941,14 +941,12 @@ more costly to develop and maintain.
   Here's something the QA Tester should consider.
 </pre>
 
-- Write Acceptance Tests in Fino.
+Write Acceptance Tests in Fino for whichever user paths and corresponding
+scenarios have been prioritized for Pre-production.
 
-- Each user path will be contained within the context of a single GitHub Issue.
-
-- Tests should specify pre-requisite application condition and data for each
-scenario. Right now, this should be documented in the GitHub Issue and
-implemented manually using Planter. Eventually, Fino should be able to document
-it in a way that Planter can execute directly.
+Tests should specify pre-requisite application condition and data for each
+scenario. Document this information in the GitHub Issue to be implemented
+manually using Planter.
 
 ### Examples
 
@@ -966,6 +964,11 @@ TODO
   Fino 1.0 requires you to write one test to cover all scenarios. Fino 2.0 will
   allow you to create multiple tests for each issue. In either case, each
   scenario within the path should have action/assertions testing that scenario.
+</aside>
+
+<aside class="warning">
+  We might explore a way for Fino to natively document prerequisite data in a
+  way that Planter can execute directly.
 </aside>
 
 ## Start UI Flows
@@ -1002,7 +1005,12 @@ TODO
   Here's something the QA Tester should consider.
 </pre>
 
-- Add UI Flows as a link in the GitHub Issue.
+Design UI Flows for all user paths.
+
+For any scenario within a user path that has a dramatic effect on the UI Flow,
+design a UI Flow specifically for it.
+
+Add UI Flows as links in the GitHub Issue.
 
 ### Examples
 
