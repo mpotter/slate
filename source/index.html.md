@@ -513,8 +513,8 @@ will have simulated the stress a user will eventually bring the product,
 surfaced any needed clarification before software is written, and established
 an actionable the outline for all the subsequent acceptance tests to be written.
 
-[To help generate scenarios and potentially boundary cases, consider the "best
-practices" list we provide and include e.g. error state considerations, etc.]
+_[To help generate scenarios and potentially boundary cases, consider the "best
+practices" list we provide and include e.g. error state considerations, etc.]_
 
 ### Examples
 
@@ -564,22 +564,24 @@ None
   Here's something the QA Tester should consider.
 </pre>
 
-- Prereqs are units of work that are specifically called out as opportunities
-to operate with higher concurrency in Production.
+Prereqs are units of work that are specifically called out as opportunities to
+operate with higher concurrency in Production. We take care to identify prereqs
+to avoid blockers in Production.
 
-- Ask "what tasks can and should be done by one or few individuals first that,
-once completed, would mean the team could double in size and grow more
-productive?"
+Generally, a prereq is work that "just needs to get done" that is usually best
+completed by one person in a particular domain and is the dependency for other
+work. Many prereqs concern developer operations and establishing technology
+stack design patterns.
 
-- e.g. "Setup staging environment," "Set up CircleCI to run specs", "Document
-use of React and Redux", etc.
-
-- Consider the "best practices" list we provide and include e.g. developer
-operations tasks, establishing stack design patterns, etc.
+To identify prereqs, use our [list of common prereqs](#) and ask "what tasks
+can and should be done by one or few individuals first that, once completed,
+would mean the team could double in size and grow more productive?"
 
 ### Examples
 
-TODO
+- "Setup staging environment"
+- "Set up CircleCI to run specs"
+- "Document use of React and Redux"
 
 ### Required Deliverables
 
